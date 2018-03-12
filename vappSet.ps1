@@ -2,7 +2,7 @@
 # Script Purpose: vApp settings												#
 # Author: Aram Avetisyan 					#
 # Version: 2											     				#
-# Release Date: 27.02.2018													#
+# Release Date: 06.03.2018													#
 # Dependency: getvmenv.bat and unattend_no.xml								#
 #############################################################################
 
@@ -16,7 +16,7 @@ $sysprepokfile = 'C:\Program Files\vmenv\unattend_ok.xml'
 $sysprepexe = "C:\Windows\System32\Sysprep\sysprep.exe /generalize /oobe /reboot /unattend:'$sysprepokfile'"
 
 # Check Execution state
-($vmenvstate = Get-ChildItem $firstbootstate) 2>&1 | out-null 
+($vmenvstate = Get-ChildItem $firstbootstate) 2>&1 | out-null
 
 If ($vmenvstate.Exists) {
     # If state file exists, nothing will happen.
