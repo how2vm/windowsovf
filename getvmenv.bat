@@ -1,0 +1,1 @@
+"C:\Program Files\VMware\VMware Tools\vmtoolsd.exe" --cmd="info-get guestinfo.ovfEnv" > "C:\Program Files\vmenv\vmenv.xml"
